@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Strona testowa</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-image:url(tlo.png);background-size: cover; ">
+  <h1>Strona testowa</h1>
+  <p>Tematyka górsko podróżnicza</p>
+
+    <div class="col-sm-12 text-center" ><dt>Menu</dt>
+		<button type="button" class="btn btn-link"><a href="StronaGlowna.html">Strona główna</a></button>
+		<button type="button" class="btn btn-link"><a href="Formularz.html">Formularz</a></button>
+		<button type="button" class="btn btn-link"><a href="Informacje.html">Informacje</a></button>
+		<button type="button" class="btn btn-link"><a href="Galeria.html">Galeria</a></button>
+	</div>
+
+	<!-- &emsp;  tabulator -->
+	
+	<div class="container">
+	  <h2>Formularz zgłoszeniowy</h2>
+	  <form class="form-horizontal" action="StronaGlowna.html">
+		<div class="form-group">
+		  <label class="control-label col-sm-2 text-center" for="name">Imie:</label>
+		  <div class="col-sm-12">
+			<input type="name" class="form-control" id="name" placeholder="Wpisz imię" name="name">
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2 text-center" for="srm">Nazwisko:</label>
+		  <div class="col-sm-12" >          
+			<input  type="surname" class="form-control" id="srm" placeholder="Wpisz nazwisko" name="srm">
+		  </div>
+		</div>
+		
+		<div class="radio">
+		  <h2>Wybierz wycieczkę na którą chcesz się zapisać</h2>
+		  <label><input type="radio" name="optradio" >Babia Góra</label>
+		</div>
+		<div class="radio">
+		  <label><input type="radio" name="optradio">Śnieżka</label>
+		</div>		
+		<div class="radio">
+		  <label><input type="radio" name="optradio">Cubryna</label>
+		</div>		
+		<div class="radio">
+		  <label><input type="radio" name="optradio">Śnieżnik</label>
+		</div>		
+		<div class="radio disabled">
+		  <label><input type="radio" name="optradio" disabled>Rysy (aktualnie niedostępne)</label>
+		</div>
+		
+		<div class="form-group">
+		  <label for="comment" class="text-danger">Pytania i komentarze do wycieczki:</label>
+		  <textarea class="form-control" rows="5" id="comment"></textarea>
+		</div>
+		
+		
+		
+		
+		<div class="form-group">        
+		  <div class="col-sm-12">
+			<button type="submit" class="btn btn-success">Zapisz się</button>
+		  </div>
+		</div>
+		</div>
+	  </form>
+	  <p class="text-info">Pamiętaj, że zimowe wycieczki górskie wymagają odpowiedniego stroju. Musisz być przygotowany na zmiany pogody!<p>
+	</div>
+
+</div>
+	<footer class="container-fluid text-center">
+		<p>&copy; 2021 Likus Aleksandra</p>
+	</footer>
+</body>
+</html>

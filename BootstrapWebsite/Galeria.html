@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Strona testowa</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-image:url(bak.png);background-size: cover; ">
+  <h1>Strona testowa</h1>
+  <p>Tematyka górsko podróżnicza</p>
+
+	<div class="col-sm-12 text-center" ><dt>Menu</dt>
+		<button type="button" class="btn btn-link"><a href="StronaGlowna.html">Strona główna</a></button>
+		<button type="button" class="btn btn-link"><a href="Formularz.html">Formularz</a></button>
+		<button type="button" class="btn btn-link"><a href="Informacje.html">Informacje</a></button>
+		<button type="button" class="btn btn-link"><a href="Galeria.html">Galeria</a></button>
+	</div>
+
+	
+	<div class="container">
+		<h1  class="text-secondary">Galeria zdjęć górskich</h1><br>
+		<h3 class="text-secondary">Góry są piękne, ale i niebezpieczne</h3><br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+			<li data-target="#myCarousel" data-slide-to="6"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="namiot.jpg" alt="namiot">
+				</div>
+
+				<div class="carousel-item">
+				  <img src="droga.jpg" alt="droga">
+				</div>
+
+				<div class="carousel-item">
+				  <img src="szlak.jpg" alt="szlak">
+				</div>
+				
+				<div class="carousel-item">
+				  <img src="fotka.jpg" alt="fotka">
+				</div>
+				
+				<div class="carousel-item">
+				  <img src="jeziorko.jpg" alt="jeziorko">
+				</div>
+				
+				<div class="carousel-item">
+				  <img src="tatry.jpg" alt="tatry">
+				</div>
+				
+				<div class="carousel-item">
+				  <img src="schron.jpg" alt="schron">
+				</div>
+		  </div>
+
+		  <!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+			</a>
+		  
+		</div>
+	</div>
+
+</div>
+	<footer class="container-fluid text-center">
+		<p>&copy; 2021 Likus Aleksandra</p>
+	</footer>
+</body>
+</html>

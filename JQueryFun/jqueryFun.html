@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Zadanie 1 jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body >
+<p>Jestem znacznik p. Zmień mój kolor na niebieski!</p>
+<div>Jestem div. Zmień mój kolor na czerwony!</div>
+<p class = "orange">Mój kolor będzie pomarańczowy!</p>
+<button id = "zmien_kolor">Zmień kolory!</button>
+
+<ul>
+	<li>Element 1</li>
+	<li>Element 2</li>
+	<li>Element 3</li>
+</ul>
+<input id = "nowy">
+<button id = "poczatek">Dodaj na początku</button>
+<button id = "koniec">Dodaj na końcu</button><br><br>
+
+<div id="mojdiv">Jestem div, kliknij a pojawi się nade mną dowolny tekst</div><br>
+<button id="klasa">Dodaj klase do ostatniego p</button>
+
+<div>
+	<h1>Jestem h1</h1>
+</div>
+<button id ="zamiennazielony">Zamien na zielony</button><br><br>
+
+
+
+<p id ="test">Jestem tekstem testowym</p><br>
+<button id ="ukryj">Ukryj</button>
+<button id ="pokaz">Pokaż</button>
+<button id ="zanik">Zanik</button>
+<button id ="posun">Zwiń</button><br><br>
+
+<p>Jestem klockiem do animacji<p>
+<div id = "klocek" style="background:#ff9966;height:100px;width:100px;position:absolute;">Klocek</div><br><br>
+
+<br><br><br><br><button id ="animacja">Wciśnij aby uruchomić animację!</button>
+
+<script>
+$(document).ready(function(){
+ $("#zmien_kolor").click(function(){
+  $("p").css('background-color','blue');
+    $("div").css('background-color','red');
+	$(".orange").css('background-color','orange')
+  });
+ });
+</script>
+<script>
+ $(document).ready(function(){
+  $("#poczatek").click(function(){
+	var zmienna = $("#nowy").val();
+	$("ul").prepend("<li>"+ zmienna +"</li>");
+   });
+    $("#koniec").click(function(){
+	var zmienna = $("#nowy").val();
+	 $("ul").append("<li>"+ zmienna +"</li>");
+	});
+ });
+</script>
+<script>
+$(document).ready(function(){
+  $("#mojdiv").click(function(){
+	$("#mojdiv").prepend("<div><p>Dowolny tekst</p></div>");
+   });
+  });
+
+</script>
+<script>
+$(document).ready(function(){
+ $("#klasa").click(function(){
+  $("div p").last().css({'background-color':'#ffccff','border-style':'dashed'}).addClass("mojZnacznik");
+   });
+  });
+</script>
+
+<script>
+$(document).ready(function(){
+ $("#zamiennazielony").click(function(){
+  $("div").children().css({'color':'green'});
+   });
+  });
+</script>
+
+<script>
+$("#ukryj").click(function(){
+  $("#test").hide();
+});
+
+$("#pokaz").click(function(){
+  $("#test").show();
+});
+</script>
+
+<script>
+$(document).ready(function(){
+ $("#zanik").click(function(){
+  $("#test").fadeOut("slow");
+   });
+  });
+</script>
+
+<script>
+$(document).ready(function(){
+ $("#posun").click(function(){
+  $("#test").slideUp("slow");
+   });
+  });
+</script>
+
+<script>
+$(document).ready(function(){
+ $("#animacja").click(function(){
+    var div = $("#klocek");  
+    div.animate({left: '150px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+   });
+  });
+</script>
+<script>
+$(document).ready(function(){
+$("body").css('background-color', 'pink');
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
